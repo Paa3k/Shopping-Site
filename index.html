@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelican Shopping Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav container">
+                <a href="#" class="logo">Pelican</a>
+                <i class='bx bx-cart' id="cart-icon"></i>
+
+                        <!-- cart -->
+                        
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content" id="contents">
+
+                        
+                    </div>
+                    <hr id="hh">
+                    <!-- total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy" onclick="openOverlay()" >Checkout</button>
+                    <!-- cart close -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="shop container">
+        <h2 class="section-title">Shopping Items</h2>
+        <!-- item 1 -->
+
+        <div class="shop-content" id="shopStuffs">           
+        </div>
+
+        
+        <div id="ok" class="overlay">
+            <!-- <button type="submit">Submit</button> -->
+            <div class="overlay-content">
+                <p>please proceed to make payment</p>
+                <button type="button" onclick="closeOverlay()">OK</button>
+
+            </div>
+        </div>
+        
+    </section>
+    <script src="Js/main.js"></script>
+    
+</body>
+</html>
